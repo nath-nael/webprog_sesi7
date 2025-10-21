@@ -12,4 +12,8 @@ class UserController extends Controller
         $users = User::with('profile')-> get();
         return response()->json($users);
     }
+    public function post(){
+        $users = User::with('posts')-> get();
+        return response()->json($users);
+    }
 }

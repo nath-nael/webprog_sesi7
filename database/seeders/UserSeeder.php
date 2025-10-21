@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Post;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -23,5 +24,6 @@ class UserSeeder extends Seeder
             'phone' => '08123456665',
             'bio' => 'Dosen'
         ]);
+        
     }
 }
